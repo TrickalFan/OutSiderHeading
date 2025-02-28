@@ -12,6 +12,7 @@
   <body>
     
     <div id="unity-container" class="unity-desktop">
+<!--       뒤로가기버튼 -->
       <button class="back-button" onclick="history.back()">뒤로가기</button>
       <!-- <button onclick="location.href='https://username.github.io/다른프로젝트/game.html'">
     다른 프로젝트로 이동
@@ -45,7 +46,7 @@
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
+      // Modify or remove this funct// Modify or remove this function to customize the visually presented
       // way that non-critical warnings and error messages are presented to the
       // user.
       function unityShowBanner(msg, type) {
@@ -129,10 +130,12 @@
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
+                  // 전체화면 가로모드
                   if (screen.orientation) {
                     screen.orientation.lock("landscape").catch(function(error) {
                     });
                   }
+                  
                 };
               }).catch((message) => {
                 alert(message);
