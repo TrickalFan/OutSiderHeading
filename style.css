@@ -15,3 +15,21 @@
 .back-button:hover {
     background-color: #ffd700;
 }
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.fullscreen-game {
+    width: auto;
+    height: 100vh;
+}
